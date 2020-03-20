@@ -1,11 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myscrape list</title>
-</head>
-<body>
-    <h2> Testing to see if this work</h2>
-</body>
-</html>
+
+{% load static %}
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>small search data</title> 
+        <meta name="vieport" content="width = device-width , initial-scale = 1">
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
+        <!-- materialize Css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    
+    <body>
+    <nav>
+        <div class="container nav-wrapper">
+            <a href="/" class="brand-logo"> Good Search</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1 style="text-align: center;"> What do you like to search for on good search??</h1>
+    <div class="row">
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color = #EE6E73">flash_on</i>
+                <p>Fast craigslist scraper</p>
+                <p class="light center"> Scrap away right here with a beautiful GUI</p>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color:orange"> camera</i>
+                <p>Filter your searches</p>
+                <p class="light center"> We built in functionality to filter base on pricing</p>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color:blue"> chrome_reader_mode</i>
+                <p>A much beautiful front-end to good search</p>
+                <p class="light center"> We built this for YOU</p>
+            </div>
+
+
+        </div>
+    </div>
+    {% block content %}
+    
+      
+    {% endblock content %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>`
